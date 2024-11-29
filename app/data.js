@@ -27,7 +27,7 @@ export const skills = [
   },
   {
     image: "/skills_image/node.png",
-    title: "Node.JS",
+    title: "Node.js",
   },
   {
     image: "/skills_image/express.png",

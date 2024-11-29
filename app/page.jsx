@@ -13,15 +13,17 @@ export default function Home() {
           alt="github"
           width={30}
           height={30}
+          className="cursor-pointer"
         />
         <Image
           src="/header_image/instagram.png"
           alt="instagram"
           width={30}
           height={30}
+          className="cursor-pointer"
         />
       </div>
-      <div className="lg:px-[100px] xl:px-[150px] py-[50px] sm:px-[50px] md:px-[100px]">
+      <div className="lg:px-[100px] xl:px-[150px] py-[50px] px-[20px]">
         <div className="sm:grid sm:grid-cols-1 lg:flex lg:grid lg:grid-cols-2">
           <div>
             <Intro />

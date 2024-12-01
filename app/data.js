@@ -1,18 +1,21 @@
 export const projects = [
   {
     main: "Mayaterokah Website",
-    description: "A Software Development Company Website",
+    description: "Corporate website for a software development company.",
     subtitle: ["Next.js", "Tailwind CSS", "shadcn/ui"],
+    weblink: "http://mayaterokah.com/",
   },
   {
     main: "Scoliosis Detection Using Machine Learning",
-    description: "Identify patient body posture whether scoliosis or normal",
-    subtitle: "React Native",
+    description: "AI-driven solution for posture and scoliosis assessment.",
+    subtitle: ["React Native", "Tailwind CSS", "Node.js", "Express", "MongoDB"],
+    link: "https://github.com/NikPrivate/scoliosis-detection",
   },
   {
-    main: "Sensolus Clone Frontend page",
-    description: "Cloning the design of Sensolus page",
-    subtitle: "React",
+    main: "Sensolus Clone Frontend Page",
+    description: "Frontend replica of the Sensolus platform design.",
+    subtitle: ["React", "Tailwind CSS", "Material UI"],
+    link: "https://github.com/NikPrivate/S-Tracker-Clone-Client",
   },
 ];
 

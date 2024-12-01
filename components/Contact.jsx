@@ -22,7 +22,7 @@ const Contact = () => {
                 alt="contacts"
                 width={35}
                 height={35}
-                className="cursor-pointer"
+                className="cursor-pointer hover:opacity-80 hover:scale-110 transform-transition duration-200"
               />
             </Link>
           </div>

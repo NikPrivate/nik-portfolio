@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="flex flex-col min-h-screen overflow-hidden">
+    <div className="flex flex-col overflow-hidden">
       <div className="flex justify-end gap-4 pr-10 pt-10">
         <Link
           href="https://github.com/NikPrivate"
@@ -19,7 +19,7 @@ export default function Home() {
             alt="github"
             width={30}
             height={30}
-            className="cursor-pointer"
+            className="cursor-pointer hover:opacity-80 hover:scale-110 transition-transform duration-200"
           />
         </Link>
 
@@ -33,30 +33,26 @@ export default function Home() {
             alt="instagram"
             width={30}
             height={30}
-            className="cursor-pointer"
+            className="cursor-pointer hover:opacity-80 hover:scale-110 transition-transform duration-200"
           />
         </Link>
       </div>
 
-      <div
-        className="
-    
-      xl:px-[150px] py-[40px] px-[20px]"
-      >
-        <div className="lg:grid lg:grid-rows-3 grid-flow-col gap-4">
+      <div className="flex items-center justify-center pt-10 px-10 2xl:mt-[100px]">
+        <div className="lg:grid lg:grid-rows-2 grid-flow-col gap-4">
           <div className="row-span-1 col-span-1">
             <Intro />
           </div>
           <div className="row-span-1 col-span-1">
             <Skills />
           </div>
-          <div className="col-span-3 row-span-2">
+          <div className="col-span-2 row-span-2">
             <Project />
           </div>
         </div>
-        <div className="xl:mt-[-70px] lg:mt-[-70px] mt-10">
-          <Contact />
-        </div>
+      </div>
+      <div className="flex justify-center items-center mt-[100px] mb-4">
+        <Contact />
       </div>
     </div>
   );

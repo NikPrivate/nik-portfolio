@@ -11,10 +11,11 @@ module.exports = {
       screens: {
         sm: "640px",
         md: "768px",
-        lg: "1024px",
-        xl: "1280px",
-        "2xl": "1536px",
+        lg: "1280px", // Large devices
+        xl: "1536px", // Extra large devices
+        "2xl": "1750px", // Double extra large devices
       },
+
       colors: {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",

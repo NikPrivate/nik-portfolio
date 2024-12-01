@@ -68,7 +68,16 @@ export const skills = [
 ];
 
 export const contact = [
-  "/contact_image/gmail.png",
-  "/contact_image/linkedin.png",
-  "/contact_image/whatsapp.png",
+  {
+    icon: "/contact_image/gmail.png",
+    link: "mailto:nikizzat0309@gmail.com",
+  },
+  {
+    icon: "/contact_image/linkedin.png",
+    link: "https://www.linkedin.com/in/nik-ahmad-izzat-044ba7257/",
+  },
+  {
+    icon: "/contact_image/whatsapp.png",
+    link: "https://wa.me/60194009974",
+  },
 ];

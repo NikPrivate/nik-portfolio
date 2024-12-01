@@ -1,4 +1,20 @@
-export const project = [];
+export const projects = [
+  {
+    main: "Mayaterokah Website",
+    description: "A Software Development Company",
+    subtitle: "Next.js",
+  },
+  {
+    main: "Scoliosis Detection Using Machine Learning",
+    description: "Identify patient body posture whether scoliosis or normal",
+    subtitle: "React Native",
+  },
+  {
+    main: "Sensolus Clone Frontend page",
+    description: "Cloning the design of Sensolus page",
+    subtitle: "React",
+  },
+];
 
 export const skills = [
   {

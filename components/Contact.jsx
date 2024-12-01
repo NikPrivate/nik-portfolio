@@ -9,11 +9,11 @@ const Contact = () => {
         <h1 className="font-sans font-semibold text-lg">Lets work together</h1>
       </div>
       <div className="flex justify-center items-center gap-x-8 p-4 bg-gray-100">
-        {contact.map((contacts) => (
-          <div>
+        {contact.map((contacts, index) => (
+          <div key={index}>
             <Image
               src={contacts}
-              alt="contact"
+              alt="contacts"
               width={35}
               height={35}
               className="cursor-pointer"

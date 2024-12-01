@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen overflow-hidden">
       <div className="flex justify-end gap-4 pr-10 pt-10">
         <Link
           href="https://github.com/NikPrivate"
@@ -38,24 +38,24 @@ export default function Home() {
         </Link>
       </div>
       <div
-        className="lg:px-[100px]
-      
-      l:px-[150px] py-[50px] px-[20px]"
+        className="
+    
+      xl:px-[150px] py-[40px] px-[20px]"
       >
-        <div className="sm:grid sm:grid-cols-1 lg:flex lg:grid lg:grid-cols-2">
-          <div>
+        <div className="lg:grid lg:grid-rows-3 grid-flow-col gap-4">
+          <div className="row-span-1 col-span-1">
             <Intro />
           </div>
-          <div>
+          <div className="row-span-1 col-span-1">
+            <Skills />
+          </div>
+          <div className="col-span-3 row-span-2">
             <Project />
           </div>
         </div>
-        <div className="flex justify-start">
-          <Skills />
+        <div className="xl:mt-[-70px] lg:mt-[-70px] mt-10">
+          <Contact />
         </div>
-      </div>
-      <div className="mt-auto mb-[110px]">
-        <Contact />
       </div>
     </div>
   );

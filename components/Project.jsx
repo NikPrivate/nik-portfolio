@@ -15,7 +15,7 @@ const Project = () => {
             >
               <h1 className="font-sans font-semibold">{list.main}</h1>
               <h2>{list.description}</h2>
-              <h3>{list.subtitle}</h3>
+              <h3>{list.subtitle[0]}</h3>
             </div>
           ))}
         </div>

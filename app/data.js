@@ -1,8 +1,8 @@
 export const projects = [
   {
     main: "Mayaterokah Website",
-    description: "A Software Development Company",
-    subtitle: "Next.js",
+    description: "A Software Development Company Website",
+    subtitle: ["Next.js", "Tailwind CSS", "shadcn/ui"],
   },
   {
     main: "Scoliosis Detection Using Machine Learning",

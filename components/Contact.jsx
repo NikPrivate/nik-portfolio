@@ -7,7 +7,7 @@ const Contact = () => {
   return (
     <div>
       <div className="flex justify-center items-center">
-        <h1 className="font-sans font-semibold text-lg">Lets work together</h1>
+        <h1 className="font-sans font-semibold text-lg">Let's work together</h1>
       </div>
       <div className="flex justify-center items-center gap-x-8 p-4 bg-gray-100">
         {contact.map((contacts, index) => (

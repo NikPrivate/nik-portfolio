@@ -2,6 +2,7 @@ import Contact from "@/components/Contact";
 import Intro from "@/components/Intro";
 import Project from "@/components/Project";
 import Skills from "@/components/Skills";
+import ThemeSwitch from "@/components/ThemeSwitch";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -9,6 +10,9 @@ export default function Home() {
   return (
     <div className="flex flex-col overflow-hidden">
       <div className="flex justify-end gap-4 pr-10 pt-10">
+        <ThemeSwitch />
+
+        {/* GitHub Icon */}
         <Link
           href="https://github.com/NikPrivate"
           target="_blank"
@@ -19,10 +23,11 @@ export default function Home() {
             alt="github"
             width={30}
             height={30}
-            className="cursor-pointer hover:opacity-80 hover:scale-110 transition-transform duration-200"
+            className="cursor-pointer hover:opacity-80 hover:scale-110 transition-transform duration-200 dark:invert"
           />
         </Link>
 
+        {/* Instagram Icon */}
         <Link
           href="https://www.instagram.com/nikzatt/"
           target="_blank"
@@ -33,7 +38,7 @@ export default function Home() {
             alt="instagram"
             width={30}
             height={30}
-            className="cursor-pointer hover:opacity-80 hover:scale-110 transition-transform duration-200"
+            className="cursor-pointer hover:opacity-80 hover:scale-110 transition-transform duration-200 dark:invert"
           />
         </Link>
       </div>

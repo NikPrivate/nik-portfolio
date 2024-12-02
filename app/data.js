@@ -41,8 +41,8 @@ export const skills = [
     title: "HTML",
   },
   {
-    image: "/skills_image/tailwind.png",
-    title: "Tailwind CSS",
+    image: "/skills_image/mysql.png",
+    title: "MySQL",
   },
   {
     image: "/skills_image/node.png",
@@ -57,8 +57,8 @@ export const skills = [
     title: "MongoDB",
   },
   {
-    image: "/skills_image/mysql.png",
-    title: "MySQL",
+    image: "/skills_image/tailwind.png",
+    title: "Tailwind CSS",
   },
   {
     image: "/skills_image/ec2.png",

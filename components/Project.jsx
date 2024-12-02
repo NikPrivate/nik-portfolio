@@ -11,7 +11,7 @@ const Project = () => {
       <h1 className="font-sans font-bold text-xl mb-3 text-center lg:text-left dark:text-white">
         Projects
       </h1>
-      <ScrollArea className="max-h-[300px] md:max-h-[500px] lg:max-h-[600px] border border-slate-700 shadow-2xl bg-gray-300 dark:bg-gray-800 overflow-y-auto rounded-md">
+      <ScrollArea className="max-h-[400px] md:max-h-[500px] lg:max-h-[600px] border border-slate-700 shadow-2xl bg-gray-300 dark:bg-gray-800 overflow-y-auto rounded-md">
         <div className="p-2 border-b">
           {projects.map((list, index) => (
             <div

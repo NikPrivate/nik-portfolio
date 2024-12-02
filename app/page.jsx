@@ -50,7 +50,7 @@ export default function Home() {
           <div className="col-span-1">
             <Intro className="mb-0" />
           </div>
-          <div className="col-span-1 row-span-1 mt-0 lg:mt-[-90px] xl:mt-[-90px]">
+          <div className="col-span-1 row-span-1 mt-0 lg:mt-[-90px] xl:mt-[-120px]">
             <Skills />
           </div>
           <div className="lg:col-span-2 lg:row-span-2 col-span-1 row-span-1">

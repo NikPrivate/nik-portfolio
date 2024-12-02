@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const Contact = () => {
   return (
-    <div>
+    <div className="mb-8">
       {/* Header Section */}
       <div className="flex justify-center items-center mb-4">
         <h1 className="font-sans font-semibold text-lg dark:text-white">

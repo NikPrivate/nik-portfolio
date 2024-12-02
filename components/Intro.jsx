@@ -3,22 +3,28 @@ import React from "react";
 
 const Intro = () => {
   return (
-    <div className="mb-2 font-sans xl:mt-0 mt-5">
-      <h1 className="text-3xl font-bold">Hi, I&apos;m Nik Ahmad Izzat</h1>
-      <div className="flex">
-        <p className="mb-3 xl:text-base text-base font-medium mt-2">
+    <div className="font-sans xl:mt-0 mt-5 text-center xl:text-left border border-gray-300 p-4 rounded-lg shadow-md">
+      {/* Name and Title */}
+      <h1 className="text-4xl font-extrabold text-gray-800 mb-3">
+        Hi, I&apos;m Nik Ahmad Izzat
+      </h1>
+
+      {/* Subtitle with Malaysia Icon */}
+      <div className="flex justify-center xl:justify-start items-center gap-2 mb-3">
+        <p className="text-lg text-gray-600 font-medium">
           A final year student from Malaysia
         </p>
         <Image
           src="/intro_image/malaysia.png"
-          alt="malaysia"
-          width={35}
-          height={35}
-          className=""
+          alt="Malaysia Flag"
+          width={30}
+          height={30}
         />
       </div>
-      <div className="border bg-black text-white border-black w-max p-2 rounded-lg xl:mb-0 mb-4">
-        <p className="font-bold">Full Stack</p>
+
+      {/* Badge */}
+      <div className="inline-block bg-gradient-to-r from-blue-600 to-purple-600 text-white px-4 py-2 rounded-full shadow-lg align-top">
+        <p className="font-semibold text-sm">Full Stack</p>
       </div>
     </div>
   );

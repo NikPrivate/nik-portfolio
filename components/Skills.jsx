@@ -4,25 +4,18 @@ import Image from "next/image";
 
 const Skills = () => {
   return (
-    <div className="font-sans">
-      <h1 className="font-bold text-lg xl:mb-4 lg:mb-4 mb-4 xl:text-left lg:text-left text-center xl:mt-0 lg:mt-0 mt-[100px]">
+    <div className="font-sans px-4 lg:px-0">
+      <h1 className="font-bold text-lg mb-6 text-center lg:text-left">
         Skills & Technologies
       </h1>
-
-      <div className="flex xl:justify-left lg:justify-left justify-center xl:grid xl:grid-cols-4 grid grid-cols-3 xl:gap-2.5 gap-4">
+      <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-4 justify-center">
         {skills.map((skill, index) => (
-          <div key={index}>
-            <div className="flex gap-1.5 items-center xl:pl-0 lg:pl-0 pl-[1px]">
-              <Image
-                src={skill.image}
-                alt={skill.title}
-                width={25}
-                height={25}
-              />
-              <h1 className="xl:text-sm lg:text-sm text-sm font-medium">
-                {skill.title}
-              </h1>
-            </div>
+          <div
+            key={index}
+            className="flex flex-col items-center space-y-2 p-2 shadow-lg rounded-md bg-white hover:bg-gray-100 transition-all duration-200"
+          >
+            <Image src={skill.image} alt={skill.title} width={40} height={40} />
+            <h1 className="text-sm font-medium text-center">{skill.title}</h1>
           </div>
         ))}
       </div>

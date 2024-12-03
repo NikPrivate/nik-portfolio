@@ -14,7 +14,17 @@ const Skills = () => {
             key={index}
             className="flex flex-col items-center space-y-2 p-2 shadow-lg rounded-md bg-white dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700 transition-all duration-200"
           >
-            <Image src={skill.image} alt={skill.title} width={40} height={40} />
+            <Image
+              src={skill.image}
+              alt={skill.title}
+              width={40}
+              height={40}
+              className={
+                ["Next.js", "Express"].includes(skill.title)
+                  ? "dark:invert"
+                  : ""
+              }
+            />
             <h1 className="text-sm font-medium text-center text-gray-800 dark:text-white">
               {skill.title}
             </h1>

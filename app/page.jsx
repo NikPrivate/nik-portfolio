@@ -15,34 +15,6 @@ export default function Home() {
         </div>
 
         {/* GitHub Icon */}
-        <Link
-          href="https://github.com/NikPrivate"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            src="/header_image/github.png"
-            alt="github"
-            width={30}
-            height={30}
-            className="cursor-pointer hover:opacity-80 hover:scale-110 transition-transform duration-200 dark:invert"
-          />
-        </Link>
-
-        {/* Instagram Icon */}
-        <Link
-          href="https://www.instagram.com/nikzatt/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            src="/header_image/instagram.png"
-            alt="instagram"
-            width={30}
-            height={30}
-            className="cursor-pointer hover:opacity-80 hover:scale-110 transition-transform duration-200 dark:invert"
-          />
-        </Link>
       </div>
 
       <div className="flex items-center justify-center pt-10 px-5 2xl:mt-[100px]">

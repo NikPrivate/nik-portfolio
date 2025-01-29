@@ -13,14 +13,17 @@ const Intro = () => {
 
       {/* Subtitle with Malaysia Icon */}
       <div className="flex justify-center lg:justify-start xl:justify-start items-center gap-2 mb-3">
-        <p className="flex gap-2 text-lg text-gray-600 font-medium dark:text-gray-300">
-          A Full Stack Developer from Malaysia
-          <Image
-            src="/intro_image/malaysia.png"
-            alt="Malaysia Flag"
-            width={30}
-            height={30}
-          />
+        <p className="flex justify-center flex-wrap items-center gap-x-2 text-lg text-gray-600 font-medium dark:text-gray-300">
+          A Full Stack Developer from
+          <span className="inline-flex justify-center items-center gap-1 whitespace-nowrap">
+            Malaysia
+            <Image
+              src="/intro_image/malaysia.png"
+              alt="Malaysia Flag"
+              width={30}
+              height={30}
+            />
+          </span>
         </p>
       </div>
 

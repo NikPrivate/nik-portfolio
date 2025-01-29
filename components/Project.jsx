@@ -8,9 +8,11 @@ import Link from "next/link";
 const Project = () => {
   return (
     <div className="lg:mt-0 xl:mt-0 mt-[50px] px-4 md:px-6 lg:px-0">
-      <h1 className="font-sans font-bold text-xl mb-3 text-center lg:text-left dark:text-white">
-        Projects
-      </h1>
+      <div className="mb-3 border p-3 justify-center flex dark:border-gray-600 dark:bg-gray-800 rounded shadow-md">
+        <h1 className="font-sans font-bold text-xl text-center lg:text-left dark:text-white font-roboto">
+          PROJECTS
+        </h1>
+      </div>
       <ScrollArea className="max-h-[400px] md:max-h-[500px] lg:max-h-[600px] border border-slate-700 shadow-2xl bg-gray-300 dark:bg-gray-800 overflow-y-auto rounded-md">
         <div className="p-2 border-b">
           {projects.map((list, index) => (

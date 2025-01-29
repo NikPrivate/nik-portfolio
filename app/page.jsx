@@ -10,10 +10,6 @@ export default function Home() {
   return (
     <div className="flex flex-col overflow-hidden">
       <div className="flex justify-end gap-4 pr-10 pt-10">
-        <div className="mt-[-2.5px]">
-          <ThemeSwitch />
-        </div>
-
         {/* GitHub Icon */}
       </div>
 

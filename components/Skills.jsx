@@ -4,10 +4,12 @@ import Image from "next/image";
 
 const Skills = () => {
   return (
-    <div className="font-sans px-4 lg:px-0 mt-8">
-      <h1 className="font-bold text-lg mb-6 text-center lg:text-left dark:text-white">
-        Skills & Technologies
-      </h1>
+    <div className="font-sans px-4 lg:px-0 mt-5">
+      <div className="border p-3 dark:border-gray-600 dark:bg-gray-800 rounded shadow-md flex justify-center mb-6">
+        <h1 className="text-xl text-center lg:text-left dark:text-white font-robot font-bold">
+          SKILLS & TECHNOLOGIES
+        </h1>
+      </div>
       <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-4 justify-center">
         {skills.map((skill, index) => (
           <div

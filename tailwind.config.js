@@ -8,6 +8,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        roboto: "Roboto",
+      },
       screens: {
         sm: "640px",
         md: "768px",

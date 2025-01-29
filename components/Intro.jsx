@@ -25,41 +25,43 @@ const Intro = () => {
       </div>
 
       {/* Badge */}
-      <div className="flex gap-4 items-center justify-center sm:justify-center md:justify-center lg:justify-start xl:justify-start">
+      <div className="xl:flex lg:flex gap-4 items-center justify-center sm:justify-center md:justify-center lg:justify-start xl:justify-start">
         <div className="inline-block bg-gradient-to-r from-blue-600 to-purple-600 text-white px-4 py-2 rounded-full shadow-lg align-top">
           <p className="font-semibold text-sm">
             Focus : Full Stack Development
           </p>
         </div>
-        <Link
-          href="https://github.com/NikPrivate"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            src="/header_image/github.png"
-            alt="github"
-            width={30}
-            height={30}
-            className="cursor-pointer hover:opacity-80 hover:scale-110 transition-transform duration-200 dark:invert"
-          />
-        </Link>
+        <div className="flex items-center justify-center xl:mt-0 lg:mt-0 mt-5 gap-5">
+          <Link
+            href="https://github.com/NikPrivate"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Image
+              src="/header_image/github.png"
+              alt="github"
+              width={30}
+              height={30}
+              className="cursor-pointer hover:opacity-80 hover:scale-110 transition-transform duration-200 dark:invert"
+            />
+          </Link>
 
-        {/* Instagram Icon */}
-        <Link
-          href="https://www.instagram.com/nikzatt/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            src="/header_image/instagram.png"
-            alt="instagram"
-            width={30}
-            height={30}
-            className="cursor-pointer hover:opacity-80 hover:scale-110 transition-transform duration-200 dark:invert"
-          />
-        </Link>
-        <ThemeSwitch />
+          {/* Instagram Icon */}
+          <Link
+            href="https://www.instagram.com/nikzatt/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Image
+              src="/header_image/instagram.png"
+              alt="instagram"
+              width={30}
+              height={30}
+              className="cursor-pointer hover:opacity-80 hover:scale-110 transition-transform duration-200 dark:invert"
+            />
+          </Link>
+          <ThemeSwitch />
+        </div>
       </div>
     </div>
   );

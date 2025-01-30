@@ -6,7 +6,7 @@ const Exprience = () => {
       {/* Experience Items */}
       <div className="border dark:border-gray-600 dark:bg-gray-800 shadow-lg rounded-xl px-6 bg-white">
         {/* Experience 1 */}
-        <div className="group hover:bg-gray-50 dark:hover:bg-gray-700/30 transition-colors p-4 rounded-lg">
+        <div className="group transition-colors p-4 rounded-lg">
           <div className="xl:flex block xl:justify-between text-center xl:text-start items-start">
             <div className="space-y-1.5">
               <h2 className="text-lg font-bold text-gray-900 dark:text-gray-100 font-inter">
@@ -26,7 +26,7 @@ const Exprience = () => {
         <hr className="dark:border-gray-700" />
 
         {/* Experience 2 */}
-        <div className="group hover:bg-gray-50 dark:hover:bg-gray-700/30 transition-colors p-4 rounded-lg">
+        <div className="group transition-colors p-4 rounded-lg">
           <div className="xl:flex block xl:justify-between text-center xl:text-start items-start">
             <div className="space-y-1.5">
               <h2 className="text-lg font-bold text-gray-900 dark:text-gray-100 font-inter">

@@ -1,13 +1,13 @@
 import React from "react";
-import { ScrollArea } from "@/components/ui/scroll-area";
+import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
 import { projects } from "@/app/data";
-import { MdOpenInNew } from "react-icons/md";
-import { CiGlobe } from "react-icons/ci";
+import { LuGlobe } from "react-icons/lu";
+import { FiGithub } from "react-icons/fi";
 import Link from "next/link";
 
 const Project = () => {
   return (
-    <div className="lg:mt-0 xl:mt-0 mt-[50px] px-4 md:px-6 lg:px-0">
+    <div className="lg:mt-0 xl:mt-0 px-4 md:px-6 lg:px-0">
       <div className="mb-3 border p-3 justify-center flex dark:border-gray-600 dark:bg-gray-800 rounded shadow-md">
         <h1 className="font-sans font-bold text-xl text-center lg:text-left dark:text-white font-roboto">
           PROJECTS
@@ -36,14 +36,14 @@ const Project = () => {
                   </h3>
                 ))}
               </div>
-              <div className="flex justify-end gap-2 text-xl">
+              <div className="flex items-center justify-end gap-2 text-xl">
                 {list.weblink && (
                   <Link
                     href={list.weblink}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <CiGlobe className="hover:opacity-80 hover:scale-110 transition-transform duration-200 dark:text-white" />
+                    <LuGlobe className="xl:text-3xl text-2xl hover:opacity-80 hover:scale-110 transition-transform duration-200 dark:text-white" />
                   </Link>
                 )}
                 {list.link && (
@@ -52,10 +52,11 @@ const Project = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <MdOpenInNew className="hover:opacity-80 hover:scale-110 transition-transform duration-200 dark:text-white" />
+                    <FiGithub className="xl:text-3xl text-2xl hover:opacity-80 hover:scale-110 transition-transform duration-200 dark:text-white" />
                   </Link>
                 )}
               </div>
+              <ScrollBar orientation="horizontal" />
             </div>
           ))}
         </div>

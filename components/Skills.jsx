@@ -4,8 +4,8 @@ import Image from "next/image";
 
 const Skills = () => {
   return (
-    <div className="font-sans px-4 lg:px-0 mt-5">
-      <div className="border p-3 dark:border-gray-600 dark:bg-gray-800 rounded shadow-md flex justify-center mb-6">
+    <div className="font-sans px-4 lg:px-0">
+      <div className="border p-3 dark:border-gray-600 dark:bg-gray-800 rounded shadow-md flex justify-center mb-3">
         <h1 className="text-xl text-center lg:text-left dark:text-white font-robot font-bold">
           SKILLS & TECHNOLOGIES
         </h1>

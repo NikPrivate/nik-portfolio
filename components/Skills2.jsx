@@ -25,7 +25,7 @@ export function Skills2() {
   }, []);
 
   return (
-    <div className="relative flex h-[500px] w-full flex-col items-center justify-center overflow-hidden">
+    <div className="relative flex xl:h-[500px] lg:h-[500px] md:h-[500px] h-[380px] w-full flex-col items-center justify-center overflow-hidden">
       <span className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300 bg-clip-text text-center text-5xl font-semibold leading-none text-transparent dark:from-white dark:to-black">
         Skills
       </span>

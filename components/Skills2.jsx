@@ -1,88 +1,111 @@
+"use client";
+
 import { OrbitingCircles } from "@/components/ui/orbiting-circles";
 import Image from "next/image";
+import { useState, useEffect } from "react";
 
 export function Skills2() {
+  const [radius, setRadius] = useState(220);
+
+  useEffect(() => {
+    const updateRadius = () => {
+      if (window.innerWidth < 640) {
+        setRadius(160); // Small screens
+      } else if (window.innerWidth < 1024) {
+        setRadius(170); // Medium screens
+      } else {
+        setRadius(220); // Large screens
+      }
+    };
+
+    updateRadius(); // Set initial radius
+    window.addEventListener("resize", updateRadius);
+
+    return () => window.removeEventListener("resize", updateRadius);
+  }, []);
+
   return (
-    <div className="relative flex h-[500px] w-full flex-col items-center justify-center overflow-hidden ">
+    <div className="relative flex h-[500px] w-full flex-col items-center justify-center overflow-hidden">
       <span className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300 bg-clip-text text-center text-5xl font-semibold leading-none text-transparent dark:from-white dark:to-black">
         Skills
       </span>
-      <OrbitingCircles iconSize={40} radius={220} reverse={2}>
+
+      {/* Outer Orbit */}
+      <OrbitingCircles iconSize={40} radius={radius} reverse={2}>
         <Image
           src="/skills_image/javascript.png"
-          alt="Javascript"
+          alt="JavaScript"
           width={40}
           height={40}
         />
         <Image
           src="/skills_image/typescript.png"
-          alt="Javascript"
+          alt="TypeScript"
           width={40}
           height={40}
         />
         <Image
           src="/skills_image/react.png"
-          alt="Javascript"
+          alt="React"
           width={40}
           height={40}
         />
         <Image
           src="/skills_image/next.png"
-          alt="Javascript"
+          alt="Next.js"
           width={40}
           height={40}
           className="dark:invert"
         />
       </OrbitingCircles>
-      <OrbitingCircles iconSize={40}>
-        <Image
-          src="/skills_image/html.png"
-          alt="Javascript"
-          width={40}
-          height={40}
-        />
+
+      {/* Middle Orbit */}
+      <OrbitingCircles iconSize={40} radius={radius * 0.7}>
+        <Image src="/skills_image/html.png" alt="HTML" width={40} height={40} />
         <Image
           src="/skills_image/tailwind.png"
-          alt="Javascript"
+          alt="Tailwind CSS"
           width={40}
           height={40}
         />
         <Image
           src="/skills_image/node.png"
-          alt="Javascript"
+          alt="Node.js"
           width={40}
           height={40}
         />
         <Image
           src="/skills_image/express.png"
-          alt="Javascript"
+          alt="Express.js"
           width={40}
           height={40}
           className="dark:invert"
         />
       </OrbitingCircles>
-      <OrbitingCircles iconSize={30} radius={100} reverse={1}>
+
+      {/* Inner Orbit */}
+      <OrbitingCircles iconSize={30} radius={radius * 0.5} reverse={1}>
         <Image
           src="/skills_image/mongodb.png"
-          alt="Javascript"
+          alt="MongoDB"
           width={40}
           height={40}
         />
         <Image
           src="/skills_image/mysql.png"
-          alt="Javascript"
+          alt="MySQL"
           width={40}
           height={40}
         />
         <Image
           src="/skills_image/ec2.png"
-          alt="Javascript"
+          alt="AWS EC2"
           width={40}
           height={40}
         />
         <Image
           src="/skills_image/rds.svg"
-          alt="Javascript"
+          alt="AWS RDS"
           width={40}
           height={40}
         />

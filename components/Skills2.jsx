@@ -4,7 +4,7 @@ import { OrbitingCircles } from "@/components/ui/orbiting-circles";
 import Image from "next/image";
 import { useState, useEffect } from "react";
 
-export function Skills2() {
+export default function Skills2() {
   const [radius, setRadius] = useState(220);
 
   useEffect(() => {

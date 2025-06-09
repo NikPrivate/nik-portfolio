@@ -20,7 +20,7 @@ const Contact = () => {
                 alt="contacts"
                 width={35}
                 height={35}
-                className="cursor-pointer hover:opacity-90 hover:scale-110 transition-transform duration-200"
+                className="cursor-pointer hover:opacity-90 hover:scale-110 transition-transform"
               />
             </Link>
           </div>

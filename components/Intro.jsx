@@ -45,7 +45,7 @@ const Intro = () => {
               alt="github"
               width={30}
               height={30}
-              className="cursor-pointer hover:opacity-80 hover:scale-110 transition-transform duration-200 dark:invert"
+              className="cursor-pointer hover:opacity-80 hover:scale-110 transition-transform dark:invert"
             />
           </Link>
 
@@ -60,7 +60,7 @@ const Intro = () => {
               alt="instagram"
               width={30}
               height={30}
-              className="cursor-pointer hover:opacity-80 hover:scale-110 transition-transform duration-200 dark:invert"
+              className="cursor-pointer hover:opacity-80 hover:scale-110 transition-transform  dark:invert"
             />
           </Link>
           <ThemeSwitch />

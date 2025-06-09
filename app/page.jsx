@@ -6,19 +6,19 @@ import Skills2 from "@/components/Skills2";
 
 export default function Home() {
   return (
-    <div className="xl:h-screen lg:h-screen flex">
-      <div className="container mx-auto px-4 xl:px-16 py-8">
+    <div className="h-screen overflow-y-auto">
+      <div className="container mx-auto px-4 xl:px-[400px] py-4 h-full">
         {/* Main grid container */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 xl:gap-12">
+        <div className="grid grid-cols-1 gap-4 h-full">
           {/* Left Column */}
-          <div className="flex flex-col gap-8 xl:gap-5">
+          <div className="flex flex-col gap-4">
             <Intro />
             <Exprience />
             <Skills2 />
           </div>
 
           {/* Right Column */}
-          <div className="flex flex-col">
+          <div className="flex flex-col gap-4">
             <Project />
             <Contact />
           </div>

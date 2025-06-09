@@ -9,7 +9,7 @@ const Project = () => {
   return (
     <div className="lg:mt-0 xl:mt-0 px-4 md:px-6 lg:px-0">
       <div className="mb-3 border p-3 justify-center flex dark:border-gray-600 dark:bg-gray-800 rounded shadow-md">
-        <h1 className="font-sans font-bold text-xl text-center lg:text-left dark:text-white font-roboto">
+        <h1 className="font-bold text-xl text-center lg:text-left dark:text-white font-roboto">
           PROJECTS
         </h1>
       </div>
@@ -43,7 +43,7 @@ const Project = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <LuGlobe className="xl:text-3xl text-2xl hover:opacity-80 hover:scale-110 transition-transform duration-200 dark:text-white" />
+                    <LuGlobe className="xl:text-3xl text-2xl hover:opacity-80 hover:scale-110 transition-transform  dark:text-white" />
                   </Link>
                 )}
                 {list.link && (
@@ -52,7 +52,7 @@ const Project = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <FiGithub className="xl:text-3xl text-2xl hover:opacity-80 hover:scale-110 transition-transform duration-200 dark:text-white" />
+                    <FiGithub className="xl:text-3xl text-2xl hover:opacity-80 hover:scale-110 transition-transform  dark:text-white" />
                   </Link>
                 )}
               </div>

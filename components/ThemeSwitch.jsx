@@ -21,7 +21,7 @@ const ThemeSwitch = () => {
     setTimeout(() => {
       setTheme(theme === "dark" ? "light" : "dark");
       setIsAnimating(false);
-    }, 300); // Delay theme change by 300ms for smooth animation
+    }, 0); // Delay theme change by 300ms for smooth animation
   };
 
   return (
@@ -29,17 +29,17 @@ const ThemeSwitch = () => {
       variant="outline"
       size="icon"
       onClick={toggleTheme}
-      className="relative transition-transform duration-300 focus:outline-none dark:border-gray-600 dark:bg-gray-800"
+      className="relative transition-transform focus:outline-none dark:border-gray-600 dark:bg-gray-800"
     >
       <Sun
-        className={`absolute h-[1.2rem] w-[1.2rem] transition-all duration-300 ${
+        className={`absolute h-[1.2rem] w-[1.2rem] transition-all ${
           theme === "dark"
             ? "opacity-0 scale-0 rotate-90"
             : "opacity-100 scale-100 rotate-0 text-black"
         }`}
       />
       <Moon
-        className={`absolute h-[1.2rem] w-[1.2rem] transition-all duration-300 ${
+        className={`absolute h-[1.2rem] w-[1.2rem] transition-all ${
           theme === "dark"
             ? "opacity-100 scale-100 rotate-0 text-white"
             : "opacity-0 scale-0 rotate-90"

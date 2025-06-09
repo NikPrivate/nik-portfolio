@@ -97,18 +97,6 @@ export default function Skills2() {
           width={40}
           height={40}
         />
-        <Image
-          src="/skills_image/ec2.png"
-          alt="AWS EC2"
-          width={40}
-          height={40}
-        />
-        <Image
-          src="/skills_image/rds.svg"
-          alt="AWS RDS"
-          width={40}
-          height={40}
-        />
       </OrbitingCircles>
     </div>
   );

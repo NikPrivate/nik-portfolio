@@ -136,7 +136,7 @@ export default function Home() {
       </div>
       <div className="mt-10">
         <div className="text-white font-bold">Links:</div>
-        <div className="mt-3 text-sm space-y-3 mr-[120px] ml-4">
+        <div className="mt-3 text-sm space-y-3 xl:mr-[120px] ml-4">
           <div className="grid grid-cols-2">
             <div className="text-gray-300">Github</div>
             <div>

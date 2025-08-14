@@ -139,40 +139,42 @@ export default function Home() {
         <div className="mt-3 text-sm space-y-3 mr-[120px] ml-4">
           <div className="grid grid-cols-2">
             <div className="text-gray-300">Github</div>
-            <div className="flex items-center gap-1">
+            <div>
               <Link
                 href="https://github.com/NikPrivate"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-white"
+                className="text-white flex items-center gap-1"
               >
                 @NikPrivate
+                <GoArrowUpRight className="text-white" />
               </Link>
-              <GoArrowUpRight className="text-white" />
             </div>
           </div>
           <div className="grid grid-cols-2">
             <div className="text-gray-300">Linkedin</div>
-            <div className="flex items-center gap-1">
+            <div>
               <Link
                 href="https://www.linkedin.com/in/nik-ahmad-izzat-044ba7257/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-white"
+                className="text-white flex items-center gap-1"
               >
                 @nik-ahmad-izzat
+                <GoArrowUpRight className="text-white" />
               </Link>
-              <GoArrowUpRight className="text-white" />
             </div>
           </div>
           <div className="grid grid-cols-2">
             <div className="text-gray-300">Email</div>
-            <div className="flex items-center gap-1">
-              <Link href="mailto:nikizzat@gmail.com" className="text-white">
-                @Nik Ahmad Izzat
-              </Link>
+
+            <Link
+              href="mailto:nikizzat@gmail.com"
+              className="text-white flex items-center gap-1"
+            >
+              @Nik Ahmad Izzat
               <GoArrowUpRight className="text-white" />
-            </div>
+            </Link>
           </div>
         </div>
       </div>

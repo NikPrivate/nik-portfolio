@@ -56,7 +56,7 @@ export default function Home() {
               usim
             </Link>
             <span className="text-xs text-gray-400 ml-2">
-              aug 2024 - jan 2024
+              aug 2024 - jan 2025
             </span>
             <p className="ml-8 text-gray-500 text-[13px] italic text-justify">
               Gained experience in analyzing and interpreting Software

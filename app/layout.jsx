@@ -1,6 +1,5 @@
 import localFont from "next/font/local";
 import "./globals.css";
-import { ThemeProvider } from "@/components/theme-provider";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -22,16 +21,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gray-100 text-gray-900 dark:bg-gray-900 transition-colors  ease-in-out`}
+        className={`${geistSans.variable} ${geistMono.variable} bg-black font-roboto`}
       >
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange={false} // Allow transitions during theme change
-        >
-          {children}
-        </ThemeProvider>
+        {children}
       </body>
     </html>
   );

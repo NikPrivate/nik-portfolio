@@ -3,7 +3,7 @@ import { GoArrowUpRight } from "react-icons/go";
 
 export default function Home() {
   return (
-    <div className="max-w-md mx-auto w-fit mt-10 pb-5">
+    <div className="max-w-sm md:max-w-md lg:max-w-md xl:max-w-md mx-auto px-4 mt-10 pb-5">
       <div>
         <div className="font-bold text-2xl text-white">Nik Ahmad Izzat</div>
         <div className="text-gray-200 mt-1">

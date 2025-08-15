@@ -3,7 +3,7 @@ import { GoArrowUpRight } from "react-icons/go";
 
 export default function Home() {
   return (
-    <div className="max-w-sm md:max-w-md lg:max-w-md xl:max-w-md mx-auto px-4 mt-10 pb-5">
+    <div className="max-w-xs md:max-w-md lg:max-w-md xl:max-w-md mx-auto px-4 mt-10 pb-5">
       <div>
         <div className="font-bold text-2xl text-white">Nik Ahmad Izzat</div>
         <div className="text-gray-200 mt-1">
@@ -31,10 +31,8 @@ export default function Home() {
             >
               usim
             </Link>
-            <span className="text-xs text-gray-400 ml-2">
-              jan 2025 - current
-            </span>
-            <p className="ml-8 text-gray-500 text-[13px] italic text-justify">
+            <p className="text-xs text-gray-400">jan 2025 - current</p>
+            <p className="ml-8 text-gray-500 text-[13px] italic text-justify mt-2">
               Developed multiple modules for the Smart Tracker System at KLIA
               Terminal 1 to monitor trolley locations in real-time, built a web
               and mobile application for Quranic translation, and enhanced the
@@ -55,10 +53,8 @@ export default function Home() {
             >
               usim
             </Link>
-            <span className="text-xs text-gray-400 ml-2">
-              aug 2024 - jan 2025
-            </span>
-            <p className="ml-8 text-gray-500 text-[13px] italic text-justify">
+            <p className="text-xs text-gray-400">aug 2024 - jan 2025</p>
+            <p className="ml-8 text-gray-500 text-[13px] italic text-justify mt-2">
               Gained experience in analyzing and interpreting Software
               Requirement Specifications (SRS) and User Requirement
               Specifications (URS), developed the company website, and created
@@ -80,10 +76,8 @@ export default function Home() {
             >
               adecco
             </Link>
-            <span className="text-xs text-gray-400 ml-2">
-              aug 2022 - oct 2022
-            </span>
-            <p className="ml-8 text-gray-500 text-[13px] italic text-justify">
+            <p className="text-xs text-gray-400">aug 2022 - oct 2022</p>
+            <p className="ml-8 text-gray-500 text-[13px] italic text-justify mt-2">
               Managed and organized facility management data for UTW Company,
               ensuring accuracy, completeness, and proper formatting for
               internal operational use.

@@ -34,7 +34,8 @@ export default function Home() {
             <p className="text-xs text-gray-400">jan 2025 - current</p>
             <p className="ml-8 text-gray-500 text-[13px] italic text-justify mt-2">
               Developed KLIA Smart Tracker for real-time trolley tracking, a
-              Quranic translation app, and enhanced the company website.
+              Quranic translation app, BLE Goat Identification, SmartBot Grocery
+              System and enhanced the company website.
             </p>
             <p className="ml-8 text-gray-300 text-[13px] mt-2">
               React.js • Node.js
@@ -112,10 +113,14 @@ export default function Home() {
           </div>
           <div className="text-gray-300 ml-4">
             built{" "}
-            <span className="text-sky-500 font-bold cursor-pointer hover:scale-110 transition-transform duration-100 inline-block">
-              qurani
-            </span>
-            <span className="ml-2 text-gray-400 text-[13px]">Ongoing</span>
+            <Link
+              href="https://play.google.com/store/apps/details?id=com.budayaqurani.app"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sky-500 font-bold cursor-pointer hover:scale-110 transition-transform duration-100 inline-block"
+            >
+              budaya qurani
+            </Link>
             <p className="text-gray-500 text-[13px] italic ml-8">
               developed web and mobile app for qurani translation
             </p>
@@ -124,7 +129,7 @@ export default function Home() {
       </div>
       <div className="mt-10">
         <div className="text-white font-bold">Links:</div>
-        <div className="mt-3 text-sm space-y-3 xl:mr-[120px] ml-4">
+        <div className="mt-3 text-sm space-y-3 xl:mr-[50px] ml-4">
           <div className="grid grid-cols-2">
             <div className="text-gray-300">Github</div>
             <div>
@@ -148,21 +153,22 @@ export default function Home() {
                 rel="noopener noreferrer"
                 className="text-white flex items-center gap-1"
               >
-                @nik-ahmad-izzat
+                @Nik Ahmad Izzat
                 <GoArrowUpRight className="text-white" />
               </Link>
             </div>
           </div>
           <div className="grid grid-cols-2">
             <div className="text-gray-300">Email</div>
-
-            <Link
-              href="mailto:nikizzat@gmail.com"
-              className="text-white flex items-center gap-1"
-            >
-              @Nik Ahmad Izzat
-              <GoArrowUpRight className="text-white" />
-            </Link>
+            <div>
+              <a
+                href="mailto:nikizzat0309@gmail.com"
+                className="text-white flex items-center gap-1"
+              >
+                nikizzat0309@gmail.com
+                <GoArrowUpRight className="text-white" />
+              </a>
+            </div>
           </div>
         </div>
       </div>

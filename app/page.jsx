@@ -111,7 +111,7 @@ export default function Home() {
               company website for innovative healthcare company
             </p>
           </div>
-          <div className="text-gray-300 ml-4">
+          {/* <div className="text-gray-300 ml-4">
             built{" "}
             <Link
               href="https://play.google.com/store/apps/details?id=com.budayaqurani.app"
@@ -124,7 +124,7 @@ export default function Home() {
             <p className="text-gray-500 text-[13px] italic ml-8">
               developed web and mobile app for qurani translation
             </p>
-          </div>
+          </div> */}
         </div>
       </div>
       <div className="mt-10">

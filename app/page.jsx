@@ -7,7 +7,7 @@ export default function Home() {
       <div>
         <div className="font-bold text-2xl text-white">Nik Ahmad Izzat</div>
         <div className="text-gray-200 mt-1">
-          full stack developer @{" "}
+          software engineer @{" "}
           <Link
             href="https://www.usim.edu.my/ms/"
             target="_blank"
@@ -22,7 +22,7 @@ export default function Home() {
         <div className="text-gray-200 mt-5 font-bold">experience:</div>
         <div className="space-y-5 mt-2">
           <div className="ml-4 text-gray-300">
-            full stack developer @{" "}
+            software engineer @{" "}
             <Link
               href="https://www.usim.edu.my/ms/"
               target="_blank"
